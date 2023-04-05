@@ -23,7 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/screenshot.jpg)
+![](images/stats.png)
+![](images/stats-responsive.jpg)
 
 ### Links
 
