@@ -24,12 +24,12 @@ Users should be able to:
 ### Screenshot
 
 ![](images/stats.png)
-![](images/stats-responsive.jpg)
+![](images/stats-responsive.png)
 
 ### Links
 
 - [Solution URL](https://github.com/emre-02/-Stats-preview-card-component)
-- [Live Site URL]()
+- [Live Site URL](https://emre-02.github.io/-Stats-preview-card-component/)
 
 ## My process
 
