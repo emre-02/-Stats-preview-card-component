@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  margin: 32px 0 32px 0;
+}
+
+.stats {
+  border: none;
+  border-radius: 16px;
+  width: 100%;
+  background-color: hsl(244, 38%, 16%);
+  margin: 48px;
+}
+
+.stats__img {
+  position: relative;
+  filter: contrast(111%) brightness(110%) saturate(130%);
+}
+
+.stats__img img {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.stats__img::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background: hsl(277, 84%, 52%);
+}
+
+.stats__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  margin: 32px;
+  color: white;
+}
+
+.stats__text p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: gray;
+}
+
+.stats__text h2 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.stats__text-color {
+  display: flex;
+ flex-direction: column;
+ 
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.stats__text .white {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.stats__text .purple {
+  color: hsl(277, 84%, 52%);
+}
+
+/*responsive*/
+
+@media screen and (min-width: 800px) {
+  .stats {
+    width: 100%;
+
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .stats__img img {
+    width: 100%;
+  }
+
+ 
+
+  .stats__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 48px;
+    margin: 32px;
+
+    color: white;
+  }
+
+
+  .stats__text-color {
+    display: flex;
+   flex-direction: column;
+   flex-flow: row nowrap;  
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+  
+
+  .stats__text p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: gray;
+  }
+
+  .stats__text h2 {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  .stats__img img {
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+}
